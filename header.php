@@ -41,6 +41,23 @@
 	</header><!-- #masthead -->
 
 	<?php
+		// 全ての投稿をポートフォリオサイトにリダイレクトさせる
+		$redirect_top_url = 'https://yhei-web-design.com/';
+		if ( is_home() ) {
+			wp_redirect( $redirect_top_url, 301 );
+			exit;
+		}
+
+		if ( is_single() ) {
+			global $post;
+			$slug = $post->post_name;
+			$redirect_single_url = "${redirect_top_url}/blogs/diary/${slug}/";
+			wp_redirect( $redirect_single_url, 301 );
+			exit;
+		}
+	?>
+
+	<?php
 
 	/*
 	 * If a regular post or page, and not the front page, show the featured image.
