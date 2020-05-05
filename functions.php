@@ -5,4 +5,3 @@ function theme_enqueue_styles() {
     // Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri(), null, filemtime( get_stylesheet_directory() . '/style.css'), null );
 }
-
