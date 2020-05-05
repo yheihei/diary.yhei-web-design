@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/*
+Template:twentyseventeen
+Theme Name:twentyseventeen_child
+*/
+@import url("//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url("../twentyseventeen/style.css");
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+html {
+  font-size: 62.5%;
+  font-family: "Noto Sans Japanese";
+}
+
+/*
+*  全体系
+*
+*/
+html[lang="ja"] body,
+html[lang="ja"] button,
+html[lang="ja"] input,
+html[lang="ja"] select,
+html[lang="ja"] textarea {
+  font-family: "Noto Sans Japanese";
+  font-weight: 300;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+/*
+*  menu系
+*/
+@media screen and (min-width: 48em) {
+  .navigation-top {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+}
+button.menu-toggle {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-left: 0.7em;
+}
+
+.menu-toggle:focus {
+  outline: none;
+}
+
+.main-navigation li {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+ul#top-menu.menu {
+  padding-left: 2.7em;
+}
+@media screen and (min-width: 768px) {
+  ul#top-menu.menu {
+    padding-left: 0em;
+  }
+}
+
+/*
+*  パンくずリスト系
+*/
+div.breadcrumbs {
+  margin-bottom: 32px;
+}
+div.breadcrumbs a {
+  color: #000;
+  -webkit-box-shadow: 0 0 0 transparent, 0 1px 0 black;
+  box-shadow: 0 0 0 transparent, 0 1px 0 black;
+  font-weight: 500;
+}
+
+/*
+*  レイアウト系
+*/
+header.page-header {
+  display: none;
+}
+
+body:not(.twentyseventeen-front-page) .entry-content {
+  margin-bottom: 80px;
+}
+
+/*
+*  見出し系
+*
+*/
+.entry-title a {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+article.post span.byline {
+  display: none;
+}
+article.post h1.entry-title {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+h1 {
+  color: black;
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+h2,
+.home.blog .entry-title {
+  color: black;
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+h3 {
+  color: black;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+h4 {
+  color: black;
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 30em) {
+  h1, .home.blog .entry-title, .page .panel-content .recent-posts .entry-title {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+
+  h2, .home.blog .entry-title, .page .panel-content .recent-posts .entry-title {
+    font-size: 28px;
+    font-size: 2.8rem;
+  }
+
+  h3, .home.blog .entry-title, .page .panel-content .recent-posts .entry-title {
+    font-size: 24px;
+    font-size: 2.4rem;
+  }
+}
+/*
+*  本文系
+*
+*/
+p {
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+blockquote {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+li {
+  list-style-position: inside;
+}
+
+div.entry-content {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+div.entry-content img {
+  margin-top: 16px;
+}
+div.entry-content blockquote {
+  background-color: #e8e8e8;
+  border-left-color: #e8e8e8;
+  background-image: url(../twentyseventeen_child/assets/images/quoat.png);
+  background-repeat: no-repeat;
+  background-position: left 16px top 16px;
+  padding-top: 56px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #CCC;
+}
+
+/*
+*  ボタン系
+*/
+a.more-link {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.widget a:focus,
+.widget a:hover,
+.site-footer .widget-area a:focus,
+.site-footer .widget-area a:hover,
+.posts-navigation a:focus,
+.posts-navigation a:hover,
+.comment-metadata a:focus,
+.comment-metadata a:hover,
+.comment-metadata a.comment-edit-link:focus,
+.comment-metadata a.comment-edit-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:hover,
+.widget_authors a:focus strong,
+.widget_authors a:hover strong,
+.entry-title a:focus,
+.entry-title a:hover,
+.entry-meta a:focus,
+.entry-meta a:hover,
+.page-links a:focus .page-number,
+.page-links a:hover .page-number,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-footer .cat-links a:focus,
+.entry-footer .cat-links a:hover,
+.entry-footer .tags-links a:focus,
+.entry-footer .tags-links a:hover,
+.post-navigation a:focus,
+.post-navigation a:hover,
+.pagination a:not(.prev):not(.next):focus,
+.pagination a:not(.prev):not(.next):hover,
+.comments-pagination a:not(.prev):not(.next):focus,
+.comments-pagination a:not(.prev):not(.next):hover,
+.logged-in-as a:focus,
+.logged-in-as a:hover,
+a:focus .nav-title,
+a:hover .nav-title,
+.edit-link a:focus,
+.edit-link a:hover,
+.site-info a:focus,
+.site-info a:hover,
+.widget .widget-title a:focus,
+.widget .widget-title a:hover,
+.widget ul li a:focus,
+.widget ul li a:hover {
+  color: #000;
+  -webkit-box-shadow: 0 0 0 transparent, 0 2px 0 black;
+  box-shadow: 0 0 0 transparent, 0 2px 0 black;
+}
+
+/*
+* ウィジェット系
+*/
+h2.widget-title {
+  font-size: 20px;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+section.widget {
+  margin-bottom: 48px;
+  padding: 0;
+}
+section.widget img.profile {
+  max-width: 160px;
+}
+section.widget p.profile {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.widget ul li, .widget ol li {
+  border-bottom: none;
+  border-top: none;
+  padding: 8px 0;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.widget_recent_entries span.post-date {
+  text-align: right;
+  color: #767676;
+}
+
+/*# sourceMappingURL=style.css.map */
